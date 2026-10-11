@@ -1,0 +1,213 @@
+/* Crystal Singing Bowls */
+.tagline {
+  max-width: 900px;
+}
+
+.bowls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 12px;
+  margin: 8px 0 18px;
+  max-width: 900px;
+}
+.bowl {
+  --c: #ffffff;
+  --glow: 0;
+  --s: 1;
+  position: relative;
+  margin: 0;
+  padding: 10px 6px;
+  border-radius: 14px;
+  border: 3px solid var(--card-border);
+  background-color: var(--card-bg);
+  color: inherit;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  transition: border-color 0.2s ease;
+}
+.bowl:hover,
+.bowl:focus-visible,
+.bowl:active {
+  background-color: var(--card-bg);
+  border-color: color-mix(in srgb, var(--c), var(--card-border) 45%);
+}
+.bowl.ringing {
+  border-color: var(--c);
+  box-shadow: 0 0 calc(30px * var(--glow))
+    color-mix(in srgb, var(--c), transparent calc(100% - 70% * var(--glow)));
+}
+.bowl svg {
+  display: block;
+  width: calc(78% * var(--s));
+  height: auto;
+  margin: 6px auto 4px;
+  fill: none;
+  cursor: inherit;
+  overflow: visible;
+}
+.bowl svg:hover {
+  fill: none;
+}
+.bowl .inner-glow {
+  opacity: calc(0.25 + 0.75 * var(--glow));
+}
+.bowl .ring {
+  fill: none;
+  stroke: var(--c);
+  stroke-width: 1.5;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.bowl.ringing .ring {
+  animation: ripple 3.4s ease-out infinite;
+}
+.bowl.ringing .ring:nth-child(2) {
+  animation-delay: 1.1s;
+}
+.bowl.ringing .ring:nth-child(3) {
+  animation-delay: 2.2s;
+}
+@keyframes ripple {
+  0% {
+    opacity: calc(0.9 * var(--glow));
+    transform: scale(0.92);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+.bowl-note {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: var(--card-strong);
+  line-height: 1.1;
+}
+.bowl-freq {
+  font-size: 0.75em;
+  color: var(--card-foot);
+  font-variant-numeric: tabular-nums;
+}
+.bowl-name {
+  font-size: 0.68em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+.bowl-key {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-size: 0.65em;
+  opacity: 0.55;
+}
+
+/* water view + chakra card */
+.stage-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 0 10px;
+}
+.water-wrap {
+  flex: 0 0 auto;
+  text-align: center;
+}
+#water {
+  display: block;
+  width: 260px;
+  height: 260px;
+}
+.water-cap {
+  font-size: 0.75em;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+.chakra-card {
+  --c: #ef5350;
+  flex: 1 1 280px;
+  max-width: 440px;
+  border-left: 6px solid var(--c);
+}
+.ck-name {
+  font-size: 1.35em;
+  font-weight: bold;
+  color: var(--card-strong);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+.ck-sk {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.75em;
+  opacity: 0.8;
+}
+.ck-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 10px var(--c);
+}
+.ck-theme {
+  margin: 6px 0 12px;
+  opacity: 0.9;
+}
+.ck-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 16px;
+  margin: 0;
+  font-size: 0.9em;
+}
+.ck-facts dt {
+  opacity: 0.7;
+}
+.ck-facts dd {
+  margin: 0;
+}
+
+.side.wide {
+  flex: 1 1 320px;
+  max-width: 440px;
+}
+.panel p.note {
+  margin: 0 0 12px;
+}
+.timer-left {
+  align-self: center;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+.journey-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+.journey-dots span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--c);
+  opacity: 0.45;
+}
+.journey-dots span.done {
+  background: var(--c);
+  opacity: 0.6;
+}
+.journey-dots span.now {
+  background: var(--c);
+  opacity: 1;
+  box-shadow: 0 0 10px var(--c);
+}

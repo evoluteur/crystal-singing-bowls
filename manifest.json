@@ -1,0 +1,24 @@
+{
+  "name": "Crystal Singing Bowls",
+  "short_name": "Crystal Singing Bowls",
+  "description": "Play seven quartz crystal singing bowls tuned to the chakras, synthesized live with Web Audio, with a guided chakra journey.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1a212d",
+  "theme_color": "#1a212d",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

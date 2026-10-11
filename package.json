@@ -1,0 +1,25 @@
+{
+  "name": "crystal-singing-bowls",
+  "version": "1.0.0",
+  "description": "Play seven quartz crystal singing bowls tuned to the chakras, synthesized live with Web Audio, with a guided chakra journey.",
+  "repository": "github:evoluteur/crystal-singing-bowls",
+  "homepage": "https://evoluteur.github.io/crystal-singing-bowls/",
+  "copyright": "(c) 2026 Olivier Giulieri",
+  "author": "Olivier Giulieri (https://evoluteur.github.io/)",
+  "license": "MIT",
+  "keywords": [
+    "crystal-singing-bowls",
+    "singing-bowls",
+    "quartz",
+    "sound-bath",
+    "sound-healing",
+    "chakras",
+    "solfeggio",
+    "meditation",
+    "webaudio",
+    "synthesizer",
+    "esoterica",
+    "pwa",
+    "javascript"
+  ]
+}
