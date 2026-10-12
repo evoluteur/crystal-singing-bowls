@@ -36,6 +36,8 @@ The pages are plain HTML, CSS and JavaScript with the Web Audio API, with no dep
 
 Crystal-Singing-Bowls is open source at [GitHub](https://github.com/evoluteur/crystal-singing-bowls) with MIT license.
 
+[Get a real crystal singing bowl](https://healing-sounds.com/collections/crystal-singing-bowls-set?ref=evoluteur)
+
 Had fun browsing the app? [Buy me a coffee by becoming a sponsor](https://github.com/sponsors/evoluteur).
 
 You may also be interested in my other sound projects [Tibetan-Singing-Bowls](https://github.com/evoluteur/tibetan-singing-bowls) ([demo](https://evoluteur.github.io/tibetan-singing-bowls/)), [Healing-Frequencies](https://github.com/evoluteur/healing-frequencies) ([demo](https://evoluteur.github.io/healing-frequencies/)) and [Cymatics](https://github.com/evoluteur/cymatics) ([demo](https://evoluteur.github.io/cymatics/)). For more mystic arts as small web apps, see [Esoterica](https://evoluteur.github.io/esoterica.html).
